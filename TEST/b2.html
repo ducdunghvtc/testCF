@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        Rank([{
+            name: "Arsenal",
+            points: 70,
+            GD: 45
+        }, {
+            name: "MU",
+            points: 60,
+            GD: 40
+        }, {
+            name: "Chelsea",
+            points: 70,
+            GD: 60
+        }, {
+            name: "Real Madrid",
+            points: 99,
+            GD: 90
+        }])
+
+        function Rank(arr) {
+            arr.sort((a, b) => {
+                return b.points - a.points;
+            })
+            arr.sort((a, b) => {
+                return b.GD - a.GD;
+            })
+            for (let i = 0; i < arr.length; i++) {
+                arr[i].position = i + 1;
+            }
+            console.log(arr)
+        }
+    </script>
+</body>
+
+</html>

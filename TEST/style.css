@@ -1,0 +1,29 @@
+#answer {
+    display: flex;
+    justify-content: space-around;
+}
+
+#question {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#btn {
+    text-align: center;
+}
+
+#send {
+    outline: none;
+    color: aqua;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+}
+
+#name {
+    font-size: 40px;
+    text-align: center;
+}
